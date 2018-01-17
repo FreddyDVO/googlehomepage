@@ -7,41 +7,63 @@
     	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<link href = "https://www.google.com/images/branding/product/ico/googleg_lodp.ico" rel= "shortcut icon">
 
-		<link rel="stylesheet" href="default.css" type="text/css">
+		<link rel="stylesheet" href="css/default.css" type="text/css">
 
 		<title>Google</title>
 	</head>
 	<body>
 
-		<nav>
-			<ul>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Store</a></li>
-				<li><a href="#">Gmail</a></li>
-				<li><a href="#">Images</a></li>
-				<li><a href="#">Options</a></li>
-				<li><a href="#">Notifications</a></li>
-				<li><a href="#">Account</a></li>
+		<div class="header">
+			<ul class="nav">
+				<li class="nav-link"><a href="#">About</a></li>
+				<li class="nav-link"><a href="#">Store</a></li>
+				<li class="nav-link"><a href="#">Gmail</a></li>
+				<li class="nav-link"><a href="#">Images</a></li>
+				<li class="btn-applications"><a href="#">
+						<svg width="16" height="16" fill="#6c6c6c">
+							<rect width="4" height="4" />
+							<rect width="4" height="4" x="6" y="0" />
+							<rect width="4" height="4" x="12" y="0" />
+							<rect width="4" height="4" x="0" y="6" />
+							<rect width="4" height="4" x="6" y="6" />
+							<rect width="4" height="4" x="12" y="6" />
+							<rect width="4" height="4" x="0" y="12" />
+							<rect width="4" height="4" x="6" y="12" />
+							<rect width="4" height="4" x="12" y="12" />
+						</svg>
+					</a></li>
+				<li  class="btn-login"><a href="#">Account</a></li>
 			</ul>
-		</nav>
+		</div> <!-- End header section-->
 
-		<div class="center">
-			<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
-		
-			<div style="position: relative;" class="search">
-				<input name="q" title="Search" type="text" placeholder="Search..." >
+		<div class="search-google">
+			<div class="logo-google" title="Google">
+				<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+				<div class="country">Ghana</div>
 			</div>
-		</div>
+		
+			<div class="search-box">
+				<div class="search-dom">
+					<input id="search-form" title="Search" type="text" autofocus>
+					<a href="#" class="keyboard"><span class="tooltip">Keyboard</span><div class="romb"></div></a>
+					<a href="#" class="microphone"><span class="tooltip">Microphone</span><div class="romb"></div></a>
+				</div>
+				<a href="search.html" class="btn-search">Search</a>
+				<a href="#" class="btn-search">I'm Feeling Lucky!</a>
+			</div>
+		</div> <!-- End Search section-->
 
-		<div class="footer">
-			<ul style="background-color: lightgrey;">
-				<li><a href="#">Advertising</a></li>
-				<li><a href="#">Business</a></li>
-				<li style="float:right;"><a href="#">Privacy</a></li>
-				<li style="float:right;"><a href="#">Terms</a></li>
-				<li style="float:right;"><a href="#">Settings</a></li>
-			</ul>
-		</div>
+		<div class="footer main-f">
+			<div class="footer-left">
+				<a href="#">Advertising</a></li>
+				<a href="#">Business</a></li>
+			</div>
+			<div class="footer-right">
+				<a href="#">Privacy</a></li>
+				<a href="#">Terms</a></li>
+				<a href="#">Settings</a></li>
+			</div>
+		</div> <!-- End Footer-->
 
 	</body>
 </html>

@@ -1,0 +1,541 @@
+/*
+=====================================================================
+*   Search Stylesheet
+*   Google rebuild project
+*   Frederick Coleman January 2018.
+=====================================================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 13px;
+}
+
+.header {
+  display: block;
+  width: 100%;
+}
+
+.header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-center {
+  float: left;
+  width: 642px;
+}
+
+.header-right {
+  float: right;
+}
+
+.search-right-nav {
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+.line {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.nav {
+  float: right;
+}
+
+.nav li {
+  display: inline-block;
+  margin: 20px 10px;
+}
+
+.nav-link a {
+  display: block;
+  color: #434343;
+  text-decoration: none;
+  
+}
+
+.nav-link a:hover {
+  text-decoration: underline;
+}
+
+.nav-header {
+  margin-top: 19px;
+}
+
+.nav-header a {
+  display: inline-block;
+  text-decoration: none;
+  color: #8C8C8C;
+  padding: 6px 14px 6px 14px;
+}
+
+.nav-header a:hover {
+  color: #434343;
+}
+
+.nav-header .active {
+  font-weight: bold;
+  color: #4285f4;
+  padding-bottom: 13px;
+  border-bottom: 3px solid #4285f4;
+}
+
+.nav-header .active:hover {
+  color: #4285f4;
+}
+
+.nav-header .tools {
+  margin: 1px;
+}
+
+.nav-header .tools:hover {
+  margin: 0;
+  border: 1px solid #B6B6B6;
+  border-radius: 2px;
+  background: #f0f0f0;
+  color: #8C8C8C;
+}
+
+.btn-applications {
+  vertical-align: middle;
+}
+
+.btn-applications svg:hover {
+  fill: #000;
+}
+
+li.btn-login {
+  margin-right: 30px;
+}
+
+.btn-login a {
+  padding: 8px 14px;
+  background: #4583ec;
+  border-radius: 3px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: default;
+}
+
+.content {  
+  width: 600px;
+  margin-left: 165px;
+}
+
+.search-google {
+  width: 600px;
+  margin: 130px auto;
+}
+
+.search-result {
+  color: #5C5C5C;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.content-box {
+  padding: 12px 0px;
+}
+
+.content-box a.box-title {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.content-box a.box-title:hover {
+  text-decoration: underline;
+}
+
+.content-box .box-link {
+  color: #006621;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.content-box .box-copy {
+  margin-left: 5px;
+  position: relative;
+  text-decoration: none;
+}
+
+ul.tooltip-copy {
+  position: absolute;
+  margin: 0;
+  display: none;
+  border: 1px solid #B6B6B6;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.15);
+  background: #fff;
+  white-space: nowrap;
+}
+
+.tooltip-copy {
+  list-style: none;
+}
+
+.tooltip-copy li {
+  text-decoration: none;
+  color: #434343;
+  font-size: 14px;
+  padding: 6px 15px;
+
+}
+
+.tooltip-copy li:hover {
+  background: #f1f1f1;
+}
+
+.content-box .box-copy:hover ul {
+  display: block;
+  top: 15px;
+  left: -14px;
+}
+
+.box-text {
+  line-height: 1.5;
+  color: #5C5C5C;
+}
+
+.box-text a {
+  text-decoration: none;
+}
+
+.logo-google {
+  position: relative;
+  text-align: center;
+}
+
+.logo-google img {
+  width: 270px;
+}
+
+img.logo-search {
+  width: 120px;
+  padding: 25px 15px;
+}
+
+.country {
+  color: #4583ec;
+  font-size: 16px;
+  position: absolute;
+  right: 165px;
+  bottom: 0px;
+}
+
+.search-box {
+  margin-top: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.search-page {
+  margin-top: 20px;
+  margin-right: 12px;
+}
+
+a.btn-search {
+  display: inline-block;
+  font-weight: bold;
+  color: rgba(0,0,0,0.6);
+  padding: 10px 15px;
+  background: #f0f0f0;
+  margin: 40px 3px 0px 3px;
+  text-decoration: none;
+}
+
+a:hover.btn-search {
+  outline: 1px solid #e0e0e0;
+  color: #000;
+}
+
+#search-form {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 13px 100px 13px 15px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.15);
+  border: 1px solid rgba(0,0,0,0.15);
+  font-size: 16px;
+}
+
+.search-dom:hover, .search-dom:focus {
+  box-shadow: 0px 4px 5px rgba(0,0,0,0.05);
+}
+
+#search-form:focus, #search-form:active {
+  outline: 0;
+}
+
+.svg-search {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 11px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.keyboard {
+  position: absolute;
+  width: 40px;
+  height: 35px;
+  display: block;
+  background: url("../images/keyboard.png") no-repeat 50% 50%;
+  top: 5px;
+  right: 55px;
+  opacity: .50;
+}
+
+.kb-search {
+  right: 85px;
+}
+
+.microphone {
+  position: absolute;
+  width: 40px;
+  height: 35px;
+  display: block;
+  background: url("../images/microphone.png") no-repeat 50% 50%;
+  top: 5px;
+  right: 15px;
+}
+
+.mp-search {
+  right: 45px;
+}
+
+span.tooltip {
+  display: none;
+  padding: 7px 7px;
+  background: #000;
+  border: 1px solid #fff;
+  box-shadow: 0px 0px 7px rgba(0,0,0,0.3);
+  text-decoration: none;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  white-space: nowrap;
+  position: absolute;
+  cursor: default;
+}
+
+.romb {
+  width: 8px;
+  height: 8px;
+  background: #000;
+  transform: rotate(45deg);
+  display: none;
+  position: absolute;
+} 
+
+.keyboard:hover {
+  opacity: .85;
+}
+
+.keyboard:hover span {
+  display: block;
+  top: 46px;
+  right: -47px;
+}
+
+.microphone:hover span {
+  display: block;
+  top: 46px;
+  right: -33px;
+  opacity: .85;
+}
+
+.keyboard:hover div {
+  display: block;
+  top: 43px;
+  right: 15px;
+}
+
+.microphone:hover div {
+  display: block;
+  top: 43px;
+  right: 17px;
+  opacity: .85;
+}
+
+.footer {
+  width: 100%;
+  background: #f0f0f0;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.main-f {
+  position: fixed;
+  bottom: 0;
+}
+
+.footer-center {
+  width: 800px;
+  margin-left: 150px;
+}
+
+.footer-center span {
+  color: #B6B6B6;
+}
+
+.footer a {
+  display: inline-block;
+  color: #8C8C8C;
+  text-decoration: none;
+  padding: 12px 15px;
+}
+
+a.footer-top-link {
+  padding: 20px 0px 5px 0px;
+}
+
+a.footer-bottom-link {
+  padding: 12px 15px 12px 0px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+a:hover.link-un {
+  text-decoration: none;
+  color: #434343;
+}
+
+.footer-left {
+  float: left;
+  margin-left: 12px;
+}
+
+.footer-right {
+  float: right;
+  margin-right: 12px;
+}
+
+.ads {
+  border: 1px solid #006621;
+  border-radius: 2px;
+  font-size: 11px;
+  padding: 1px 2px;
+
+}
+
+.video {
+  width: 116px;
+  height: 67px;
+  float: left;
+  position: relative;
+  background: url('../images/video.jpg') 0px -11px;
+  margin-right: 7px;
+  border-right: 1px solid #434343;
+  margin-top: 4px;
+}
+
+.video-time {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  padding: 2px;
+  color: #fff;
+  background: #434343;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.together {
+  color: #434343;
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.together-link a {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 6px 10px 6px 0px;
+}
+
+.together-link a:hover {
+  text-decoration: underline;
+}
+
+.paginator {
+  margin: 20px auto;
+  width: 400px;
+  height: 60px;
+  text-align: center;
+}
+
+
+.paginator span {
+  color: #434343;
+}
+
+.paginator a {
+  color: #4285f4;
+  text-decoration: none;
+}
+
+.paginator a:hover {
+  text-decoration: underline;
+}
+
+.paginator > div {
+  display: inline-block;
+  margin-left: -2px;
+  margin-right: -1px;
+}
+
+div.big-G {
+  width: 28px;
+  height: 30px;
+  background: url('../images/nav_logo242.png') no-repeat -24px 0px;
+  margin-bottom: 19px;
+  margin-right: 0px;
+}
+
+.first .pag-img {
+  width: 20px;
+  height: 37px;
+  background: url('../images/nav_logo242.png') no-repeat -54px 0px;
+  
+}
+
+.first-page {
+  text-align: right;
+  padding-right: 5px;
+}
+
+.paginator-link .pag-img {
+  width: 20px;
+  height: 37px;
+  background: url('../images/nav_logo242.png') no-repeat -74px 0px;
+  
+}
+
+.next {
+  width: 130px;
+  text-align: right;
+}
+.next .pag-img {
+  width: 72px;
+  height: 37px;
+  background: url('../images/nav_logo242.png') no-repeat -96px 0px;
+  
+}
