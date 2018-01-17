@@ -16,67 +16,79 @@
 </head>
 
 <body id="" class="">
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle Navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#"><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_120x44dp.png" class="logo"></a>
-			</div><!-- End of navbar header -->
 
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<form class="form-inline navbar-form navbar-left">
-					<div class="form-group">
-						<div class="input-group search-bar">
-							<input type="text" class="form-control" id="exampleInputAmount" placeholder="Search Query">
-							<div class="input-group-addon">
-								<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-							</div>
-						</div>
-					</div>
-				</form>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#"><button type="button" class="btn btn-primary">Sign In</button></a></li>
-				</ul>
-			</div><!-- End of navbar collapse -->
-		</div> <!-- End of container -->
-	</nav>
+	<div class="header line">
+		<div class="header-left">
+			<div class="logo-google" title="">
+				<img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_120x44dp.png" class="logo-search" alt="Google-logo">
+			</div>
+		</div>
+	</div>
+	<div class="header-center">
+		<div class="search-box search-page">
+			<div class="search-dom">
+				<input type="text" id="search-form" title="Search" value="create this page">
+				<a href="#" class="keyboard"><span class="tooltip">Keyboard</span><div class="romb"></div></a>
+				<a href="#" class="microphone"><span class="tooltip">Microphone</span><div class="romb"></div></a>
+				<div class="svg-search">
+					<svg fill="#4285f4" viewBox="0 0 24 24">
+						<path d="M 15.5 14 h -0.79 l -0.28 -0.27 C 15.41 12.59 16 11.11 16 9.5 C 16 5.91 13.09 3 9.5 3 S 3 5.91 3 9.5 S 5.91 16 9.5 16 c 1.61 0 3.09 -0.59 4.23 -1.57 l 0.27 0.28 v 0.79 l 5 4.99 L 20.49 19 l -4.99 -5 Z m -6 0 C 7.01 14 5 11.99 5 9.5 S 7.01 5 9.5 5 S 14 7.01 14 9.5 S 11.99 14 9.5 14 Z"></path>
+					</svg>
+				</div>
+			</div>
+		</div>
 
-	<nav class="nav-two">
-		<ul class="nav navbar-nav navbar-left">
-			<li><a href="#">Web</a></li>
-			<li><a href="#">Videos</a></li>
-			<li><a href="#">News</a></li>
-			<li><a href="#">Shopping</a></li>
-			<li><a href="#">Images</a></li>
-			<li><a href="#">More</a></li>
-			<li><a href="#">Search</a></li>
+		<div class="navbar-header">
+			<a href="#" class="active">All</a>
+			<a href="#">Images</a>
+			<a href="#">Videos</a>
+			<a href="#">News</a>
+			<a href="#">Shopping</a>
+			<a href="#">More</a>
+			<a href="#">Settings</a>
+			<a href="#">Tools</a>
+		</div>
+	</div>
+
+	<div class="header-right search-right-nav">
+		<ul class="nav">
+			<li class="btn-applications">
+				<a href="#">
+					<svg width="16" height="16" fill="#6c6c6c">
+							<rect width="4" height="4" />
+							<rect width="4" height="4" x="6" y="0" />
+							<rect width="4" height="4" x="12" y="0" />
+							<rect width="4" height="4" x="0" y="6" />
+							<rect width="4" height="4" x="6" y="6" />
+							<rect width="4" height="4" x="12" y="6" />
+							<rect width="4" height="4" x="0" y="12" />
+							<rect width="4" height="4" x="6" y="12" />
+							<rect width="4" height="4" x="12" y="12" />
+						</svg>
+					</a>
+				</li>
+			<li class="btn-login"><a href="#">Account</a></li>
 		</ul>
-		<ul>
-			<li><button><span></span></button></li>
-		</ul>
-	</nav>
+	</div>
 
-	<div class="line-break"></div>
-
-	<section>
-		<p>About 4,080,000 results (0.57 seconds)</p><br>
-	    <div>
-	        <a href="#"><h4>With zero coding experience, artist building 180 webpages ...</h4></a>
-	        <p class="result-url">arstechnica.com/.../with-zero-coding-experience-artist-build...<span class="result-date">  Ars Technica</span></p>
+	<section class="content">
+		<p class="search-result">About 4,080,000 results (0.57 seconds)</p><br>
+	    <div class="content-box">
+	        <a href="#" class="box-title"><h4>With zero coding experience, artist building 180 webpages ...</h4></a>
+	        <span class="box-link">arstechnica.com/.../with-zero-coding-experience-artist-build...</span>
 	        <p><span class="result-date">Jul 26, 2013 - </span>117 days ago, having never done any programming in her life, Jennifer Dewalt built her first webpage. The next day, she built another, and she ...</p>
 	    </div>
+
 	    <br>
+	    
 	    <div>
 	        <a href="#"><h4>Build Your Own Webpage | Codecademy</h4></a>
 	        <p class="result-url">www.codecademy.com/courses/web-beginner-en-LceTK<span class="result-date">  Codecademy</span></p>
 	        <p>Build Your Own Webpage. What you'll be making. Before we ask you to write a bunch of code, we think it's helpful for you to see exactly what you'll be making in ...</p>
 	    </div>
+	    
 	    <br>
+	    
 	    <div>
 	        <a href="#"><h4>How Do We Know They Need This Webpage? | Inc.com</h4></a>
 	        <p class="result-url">www.inc.com/...build.../how-do-we-know-they-need-this-webpage.h...<span class="result-date">  Inc.</span></p>
@@ -84,8 +96,7 @@
 	    </div>
 
 	    <div class="line-break"></div>
-	    <div>
-	        <h4 class="related-searches-head">Searches related to build this webpage</h4>
+	    <div class="together">Searches related to build this webpage</div>
 	        <div>
 	            <ul class="col-md-6">
 	                <li><a>how to build a website</a></li>
@@ -100,7 +111,7 @@
 	                <li><a>how to build a web page from scratch</a></li>
 	            </ul>
 	        </div>
-	    </div>
+
 	    <div class="line-break" style="margin-top: 120px"></div>
 	    <br>
 	    <img class="footer-image" src="http://swatikumar16.github.io/google-homepage/image/footer-logo.png">
