@@ -10,7 +10,7 @@
 /* Style the search box inside the navigation bar */
 .search input[type=text] {
     float: right;
-    padding: 6px;
+    padding: 10px;
     border: 1px;
     margin-top: 8px;
     margin-right: 16px;
@@ -38,6 +38,9 @@ li a {
     margin - top: 2px;
     margin - right: 13px;
 }
+li a:hover{
+    text-decoration: underline;
+}
 
 img {
     width: 280px;
@@ -52,6 +55,7 @@ input {
     margin: 20px auto;
     display: block;
 }
+
 
 /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
 @media screen and (max-width: 600px) {
@@ -74,7 +78,8 @@ input {
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     font - family: verdana;
+    width:100%;
 }
